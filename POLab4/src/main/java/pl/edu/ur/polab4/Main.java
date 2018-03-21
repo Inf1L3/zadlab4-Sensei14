@@ -1,6 +1,7 @@
 package pl.edu.ur.polab4;
 
 import java.util.Scanner;
+import pl.edu.ur.polab4.ObliczanieFigur.*;
 
 public class Main {
 
@@ -29,7 +30,9 @@ public class Main {
 //        s5.setDane();
 //        s5.pokazDane();
         
-        
+//        Kwadrat k1 = new Kwadrat();
+//        k1.setBok();
+//        k1.pole();
         
         
         
