@@ -29,7 +29,12 @@ public class Student {
         this.nazwisko=nazwisko;
     }
     
-    public Student(){}
+    public Student(){
+        this.imie="";
+        this.nazwisko="";
+        this.nr_indeksu=0;
+        this.nazwaSpecjalnosci="";
+        this.rok_studiow=0;}
     
     public Student(String imie, String nazwisko, int nr, String spec, int rok)
     {
@@ -68,17 +73,26 @@ public class Student {
         
          System.out.println("Imie: "); imie=odczyt.nextLine();
          System.out.println("Nazwisko: "); nazwisko=odczyt.nextLine();
-         System.out.println("Nr_indeksu: "); indeks=odczyt.nextInt();
-         System.out.println("Nazwa Specjalności: "); spec=odczyt.nextLine();
-         System.out.println("Rok studiów: "); rok=odczyt.nextInt();
+         System.out.println("Nr_indeksu: "); indeks=odczyt.nextInt(); odczyt.nextLine();
+       System.out.println("Rok studiów: "); rok=odczyt.nextInt(); odczyt.nextLine();
+         System.out.println("Nazwa Specjalności: "); spec = odczyt.nextLine();
         
         
         
         this.imie=imie;
         this.nazwisko=nazwisko;
         this.nr_indeksu=indeks;
-        this.nazwaSpecjalnosci=spec;
+       this.nazwaSpecjalnosci=spec;
         this.rok_studiow=rok;
+     }
+     
+     public void reset()
+     {
+         this.imie="";
+        this.nazwisko="";
+        this.nr_indeksu=0;
+        this.nazwaSpecjalnosci="";
+        this.rok_studiow=0;
      }
     
 }

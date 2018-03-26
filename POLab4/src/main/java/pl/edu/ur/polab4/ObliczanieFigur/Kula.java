@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author student
+ * @author Sensei
  */
-public class Kolo {
+public class Kula {
     
     private int promien;
   
@@ -21,7 +21,7 @@ public class Kolo {
     public void setPromien()
     {
         int pr;
-        System.out.println("Podaj promien Koła: ");
+        System.out.println("Podaj promien Kuli: ");
         pr=odczyt.nextInt();
         this.promien=pr;
     }
@@ -30,22 +30,19 @@ public class Kolo {
     public double pole()
     {
         double p;
-        p=Math.PI*(this.promien*this.promien);
+        p=4*(Math.PI*(this.promien*this.promien));
         System.out.println("Promień: "+this.promien);
         System.out.println("Pole: "+p);
         return p;
     }
     
-     public double obw()
+     public double obj()
     {
         double o;
-        o=2*Math.PI*this.promien;
+        o=(4/3)*Math.PI*Math.pow(this.promien, 3);
         System.out.println("Promień: "+this.promien);
-        System.out.println("Obwód: "+o);
+        System.out.println("Objętość: "+o);
         return o;
     }
-    
-    
-    
     
 }
